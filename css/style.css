@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.navigation {
+  display: flex;
+}
+.navitem {
+  border: 1px solid black;
+  width: 230px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: teal;
+  color: white;
+  opacity: 0.9;
+}
+.navitem:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.categories{
+position: absolute;
+bottom: -310%;
+display: none;
+}
+.clothes{
+    position: relative;
+    
+}
+.clothes:hover>.categories{
+    display: block;
+}
+ .subcategories{
+    position: absolute;
+    right: -100%;
+    bottom: -210%;
+    display: none;
+ }
+ .man,.woomen,.kids{
+    position: relative;
+ } 
+ .man:hover>.subcategories{
+    display: block;
+ }
+ 
+ .woomen:hover>.subcategories{
+    display:block ;
+ }
+ .kids:hover>.subcategories{
+    display: block;
+ }
+ p{
+   padding-top: 50px;
+ }
+ 
+ 
+ 
+ 
+
+
